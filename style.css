@@ -74,3 +74,25 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.banner {
+  background: linear-gradient(90deg, #ff4081, #ffeb3b, #40c4ff);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  animation: bannerSlide 8s infinite linear;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+@keyframes bannerSlide {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
