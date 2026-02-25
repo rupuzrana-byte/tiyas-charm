@@ -1,40 +1,76 @@
-/* style.css */
-
-/* Global Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
+  background: linear-gradient(to bottom, #ffeb3b, #ff80ab);
   color: #333;
 }
 
-h1, h2, h3 {
-  text-align: center;
-  color: #444;
-}
-
-p {
-  line-height: 1.6;
-}
-
-/* Header */
 header {
-  background-color: #ff6f61;
+  background: #4a148c;
   color: white;
-  padding: 20px;
+  padding: 1em;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.2em;
+nav a {
+  color: #ffeb3b;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0 0;
-  display: flex;
-  justify
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
+.hero {
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-img {
+  max-width: 300px;
+  border: 5px solid #4a148c;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.hero-img:hover {
+  transform: scale(1.1);
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  background: #ffe0f7;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
